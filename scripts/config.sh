@@ -18,4 +18,4 @@ sudo systemctl start mongod
 sudo systemctl enable mongod 
 
 echo " ----- copy unit file for application ----- "
-sudo mv raddit.service /etc/systemd/system/raddit.service
+sudo cp raddit.service /etc/systemd/system/raddit.service
