@@ -19,4 +19,4 @@ sudo systemctl enable mongod
 
 echo " ----- copy unit file for application ----- "
 wget https://gist.githubusercontent.com/Artemmkin/ce82397cfc69d912df9cd648a8d69bec/raw/7193a36c9661c6b90e7e482d256865f085a853f2/raddit.service
-mv raddit.service /etc/systemd/system/raddit.service
+sudo mv raddit.service /etc/systemd/system/raddit.service
