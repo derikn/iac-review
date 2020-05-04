@@ -2,15 +2,16 @@
 set -e
 
 echo " ----- install ruby and bundler ----- "
-apt-get update
-apt-get install -y ruby-full build essential
+sudo apt-get update
+sudo apt-get install -y ruby-full build essential
 gem install --no-rdoc --no-ri bundler
 
 echo " ----- install mongodb ----- "
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+
 echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-apt-get update
-apt-get install -y mongodb-org
+sudo apt-get update
+sudo apt-get install -y mongodb-org
 
 echo " ----- start mongodb ----- "
 systemctl start mongod
