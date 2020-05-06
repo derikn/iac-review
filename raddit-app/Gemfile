@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'nio4r'
 gem 'bcrypt'
 gem 'bson_ext'
 gem 'haml'
